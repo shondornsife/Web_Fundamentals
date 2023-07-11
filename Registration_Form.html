@@ -7,8 +7,58 @@
 </head>
 <body>
     <h1>Registration Form</h1>
-    <form action="">
-        First Name: * <input:name></input:name>
+    <form action="process">
+        <div>
+            First Name:*<input type="text" name="first_name" id="">
+        </div>
+        <div>
+            Last Name:*<input type="text" name="last_name" id="">
+        </div>
+        <div>
+            E-Mail Address:*<input type="email" name="emailadd" id="">
+        </div>
+        <div>
+            Password:* <input type="password" name="pass" id="">
+        </div>
+        <div>
+            Conform Password:* <input type="password" name="confirm" id="">
+        </div>
+        <div>
+            Birthday: <input type="date" name="birthday" id="">
+        </div>
+        <div>Gender Identity:</div>
+        <div>
+            <input type="radio" name="font" id="Male">
+            <label for="Male">Male</label>
+            <input type="radio" name="font" id="Female">
+            <label for="Female">Female</label>
+            <input type="radio" name="font" id="Non-Binary">
+            <label for="Non-Binary">Non-Binary</label>
+            <input type="radio" name="font" id="noanswer">
+            <label for="noanswer">I prefer not to answer</label>
+        </div>
+        <div>A short description of myself:</div>
+        <div>
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <div>
+            Favorite Language: <select name="language" id="">
+                <option value="JavaScript">JavaScript</option>
+                <option value="Python">Python</option>
+                <option value="Java">Java</option>
+                <option value="C#">C#</option>
+            </select>
+        </div>
+        <div>
+            <input type="checkbox" name="confirm" id="">
+            <label for="confirm">Yes, I would like to recieve periodic e-mail updates</label>
+        </div>
+        <div>
+            <input type="submit" value="Create Account">
+        </div>
+        <div>
+            * indicates required field
+        </div>
     </form>
 </body>
 </html>
