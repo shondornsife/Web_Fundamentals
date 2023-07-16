@@ -1,0 +1,33 @@
+* {
+    padding: 4px;
+    margin: 0;
+    /* this makes it even through browsers */
+}
+.container {
+    display: flex;
+    width: 700px;
+    margin: 100px auto 0;
+    /* justify-content: space-around; */
+    align-items: center;
+    gap:10px;
+    border: lightgray 5px;
+}
+.user-card {
+    width: 100%;
+}
+.header {
+    background-color: #17a2b8;
+}
+.header img {
+    width: 75px;
+    padding: 36px;
+}
+h1 {
+    align-items: center;
+}
+h2 {
+    display: inline-flex;
+}
+.card-body img {
+    width: 15px
+}
