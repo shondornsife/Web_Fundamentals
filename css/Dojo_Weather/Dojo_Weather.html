@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Dojo_weather.css">
+    <title>Dojo Weather</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>DojoWeather</h1>
+        <div class="citywalk">
+            <button onclick="alert('Loading weather report...')">Burbank</button>
+            <button onclick="alert('Loading weather report...')">Chicago</button>
+            <button onclick="alert('Loading weather report...')">Dallas</button>
+        </div>
+    </div>
+    <div class="city">
+        <div class="sanjose">San Jose</div>
+        <div class="temp">
+            <!-- figure out how to label better dude -->
+            <label>show temperature in</label>
+            <select onchange="">
+                <option>C&deg;</option>
+                <option>F&deg;</option>
+            </select>
+        </div>
+    </div>
+    <hr>
+    <!-- this is the main box underneath the header -->
+    <main>
+        <div class="top">
+            <div class="box1">
+                <p class="para">Today</p>
+                <img src="./images/assets/some_rain.png" alt="">
+                <p class="para">Some rain</p>
+                <p class="para"><span class="red">24</span>&deg<span class="blue">18</span>&deg</p>
+
+            </div>
+            <div class="box2">
+                <p class="para">Today</p>
+                <img src="./images/assets/some_sun.png" alt="">
+                <p class="para">Some sun</p>
+                <p class="para"><span class="red">27</span>&deg<span class="blue">19</span>&deg</p>
+
+            </div>
+            <div class="box3">
+                <p class="para">Friday</p>
+                <img src="./images/assets/some_clouds.png" alt="">
+                <p class="para">Some clouds</p>
+                <p class="para"><span class="red">21</span>&deg<span class="blue">16</span>&deg</p>
+
+            </div>
+            <div class="box4">
+                <p class="para">Saturday</p>
+                <img src="./images/assets/some_sun.png" alt="">
+                <p class="para">Some sun</p>
+                <p class="para"><span class="red">26</span>&deg<span class="blue">21</span>&deg</p>
+
+            </div>
+        </div>
+        <div class="bottom">
+            <img src="./images/assets/cookie.png" alt="">
+            <div class="embolden">
+                <p>Stop! Cookie Time</p>
+                <p>We use cookies (sadly not the edible ones) to personalize content and ads, to provide social media
+                    features and to analyse our traffic. <a href="">Read more...</a></p>
+            </div>
+            <button class="accept" onclick="removeMe('.bottom')">I accept</button>
+        </div>
+    </main>
+    <script src="Dojo_weather.js"></script>
+</body>
+
+</html>
